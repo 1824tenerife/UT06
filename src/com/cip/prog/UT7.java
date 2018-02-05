@@ -23,9 +23,9 @@ public class UT7 {
 			System.out.println("3.media ");
 			System.out.println("4.todos ");
 			System.out.println("0.Salir");
-			System.out.println("Introduzca una opción");
+			System.out.println("Introduzca una opciÃ³n");
 
-		} while (opcion!= 0);
+		opcion = teclado.nextInt();
 
 	
 		int mayor = numeros[0];
@@ -52,7 +52,8 @@ public class UT7 {
 		
 		}
 		
-            int todos = numeros[0];
+            public static void numeros() { 
+		    
 			for (int i = 1 ; i < numeros.length; i++) {
 				
 			System.out.print(" " + numeros[i]);
@@ -62,7 +63,7 @@ public class UT7 {
 
 		
 
-			opcion = teclado.nextInt();
+			
 
 			switch (opcion) {
 
@@ -86,11 +87,13 @@ public class UT7 {
 				break;
 
 			}while (opcion!=0);
+			
+			teclado.close();
 	}
 }
 		
 
-		// teclado.close();
+		
 
 	
 
